@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Técnico en Informática</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eef2f7;color:#222}
+header{background:#0b3d91;color:white;text-align:center;padding:0 0 25px 0}
+header img{width:100%;height:220px;object-fit:cover;display:block}
+header h1{margin:20px 0 0 0;font-size:30px}
+.menu{background:white;text-align:center;padding:10px}
+.menu span{margin:0 8px;color:#0b3d91;font-weight:bold;font-size:14px}
+.menu a{color:#0b3d91;font-weight:bold;font-size:14px;text-decoration:none}
+.container{max-width:900px;margin:auto;padding:15px}
+.card{background:white;border-radius:15px;padding:20px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.card h2{color:#0b3d91;margin-top:0}
+.card img{width:100%;border-radius:12px;margin:10px 0;max-height:280px;object-fit:cover}
+.center{text-align:center}
+.link-box{background:#e8f0ff;border:2px dashed #0b3d91;border-radius:12px;padding:15px;text-align:center;word-break:break-all}
+.link-box a{color:#0b3d91;font-weight:bold;font-size:15px}
+.btn-link{background:#0b3d91;color:white;border:none;padding:11px 22px;border-radius:50px;font-weight:bold;cursor:pointer;margin-top:10px}
+.form-table{width:100%}
+.form-table td{padding:8px;vertical-align:top}
+.form-table input[type="text"],.form-table input[type="tel"],.form-table input[type="date"],.form-table select{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
+.opciones label{display:inline-block;margin:5px 10px 5px 0}
+.tabla-materias{width:100%;border-collapse:collapse}
+.tabla-materias th,.tabla-materias td{border:1px solid #ddd;padding:8px;text-align:center;font-size:13px}
+.tabla-materias th{background:#0b3d91;color:white}
+.scroll{overflow-x:auto}
+.botones-crud{text-align:center}
+.btn-crud{border:none;color:white;font-weight:bold;font-size:17px;padding:13px 35px;border-radius:50px;cursor:pointer;display:inline-block;min-width:160px}
+.btn-registro{background:#3b6cff}
+.btn-consultar{background:#5cb85c}
+.btn-actualizar{background:#ff8fa3}
+.btn-eliminar{background:#ffb066}
+.desc-boton{color:#6b7a8d;font-size:15px;margin:8px 0 20px 0}
+.btn-mini{border:none;color:white;padding:6px 10px;border-radius:10px;cursor:pointer}
+footer{text-align:center;padding:15px;color:#666;font-size:13px}
+footer a{color:#0b3d91;font-weight:bold}
+</style>
+</head>
+<body>
+
+<header>
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80" alt="Técnico en Informática">
+<h1>Técnico en Informática</h1>
+<p>Aprende, crea y programa tu futuro</p>
+</header>
+
+<div class="menu">
+<span>¿Qué es?</span><span>Materias</span><span>Aprendizaje</span><span>Trabajo</span><span>Registro</span><span> | </span>
+<a href="#" id="menuLink">🔗 Mi Página Web</a>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>🔗 Link de mi Página Web</h2>
+<p class="center">Compártelo con tus compañeros:</p>
+<div class="link-box">
+<a id="miLink" href="#" target="_blank">Cargando link...</a><br>
+<button class="btn-link" id="btnCopiar">📋 Copiar Link</button>
+<p id="copiado" class="center" style="color:green;font-weight:bold"></p>
+</div>
+</div>
+
+<div class="card">
+<h2>1. ¿Qué es Técnico en Informática?</h2>
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80">
+<p>La carrera de Técnico en Informática te enseña a usar, reparar, programar y administrar computadoras, sistemas y redes.</p>
+<p><b>Duración:</b> 3 años, 6 semestres.</p>
+</div>
+
+<div class="card">
+<h2>2. ¿Qué hace un Técnico en Informática?</h2>
+<img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80">
+<p>Instala y repara computadoras, crea páginas web, maneja bases de datos, instala redes, da mantenimiento y soporte técnico.</p>
+</div>
+
+<div class="card">
+<h2>3. Materias de la Carrera</h2>
+<div class="scroll">
+<table class="tabla-materias">
+<tr><th>Semestre</th><th>Materias</th></tr>
+<tr><td>1er Semestre</td><td>Introducción a la Informática, Matemáticas, Programación Básica, Ofimática</td></tr>
+<tr><td>2do Semestre</td><td>Programación, Base de Datos, Redes, Sistemas Operativos</td></tr>
+<tr><td>3er Semestre</td><td>Diseño Web, Mantenimiento de Equipos, Lógica de Programación</td></tr>
+<tr><td>4to Semestre</td><td>Programación Avanzada, Base de Datos Avanzada, Redes Locales</td></tr>
+<tr><td>5to Semestre</td><td>Desarrollo de Software, Diseño de Aplicaciones, Prácticas Profesionales</td></tr>
+<tr><td>6to Semestre</td><td>Proyecto Final, Emprendimiento, Servicio Social</td></tr>
+</table>
+</div>
+</div>
+
+<div class="card">
+<h2>4. ¿Qué vas a aprender?</h2>
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80">
+<p><b>Programación:</b> HTML, CSS, JavaScript, Python y Java.<br>
+<b>Diseño Web:</b> Páginas bonitas y rápidas.<br>
+<b>Base de Datos:</b> Guardar y buscar información.<br>
+<b>Redes:</b> Internet, WiFi y compartir archivos.<br>
+<b>Mantenimiento:</b> Reparar equipos.</p>
+</div>
+
+<div class="card">
+<h2>10. Formulario de Alumno</h2>
+<p class="center"><b>Llena todos tus datos para registrarte.</b></p>
+<table class="form-table">
+<tr><td><b>ID Alumno:</b></td><td><input type="text" id="id" placeholder="Ej. 2024001"></td></tr>
+<tr><td><b>Nombre:</b></td><td><input type="text" id="nombre" placeholder="Ej. Juan"></td></tr>
+<tr><td><b>Apellido paterno:</b></td><td><input type="text" id="paterno" placeholder="Ej. Pérez"></td></tr>
+<tr><td><b>Apellido materno:</b></td><td><input type="text" id="materno" placeholder="Ej. López"></td></tr>
+<tr><td><b>Teléfono:</b></td><td><input type="tel" id="telefono" placeholder="Ej. 7296504085"></td></tr>
+<tr><td><b>Fecha de nacimiento:</b></td><td><input type="date" id="fecha" min="1990-01-01" max="2026-12-31"></td></tr>
+<tr><td><b>Sexo:</b></td><td class="opciones">
+<label><input type="radio" name="sexo" value="Masculino" checked> Masculino</label>
+<label><input type="radio" name="sexo" value="Femenino"> Femenino</label>
+<label><input type="radio" name="sexo" value="Otro"> Otro</label>
+</td></tr>
+<tr><td><b>Turno:</b></td><td class="opciones">
+<label><input type="radio" name="turno" value="Matutino" checked> Matutino</label>
+<label><input type="radio" name="turno" value="Vespertino"> Vespertino</label>
+</td></tr>
+<tr><td><b>Grado:</b></td><td><select id="grado"><option>1er Grado</option><option>2do Grado</option><option>3er Grado</option></select></td></tr>
+<tr><td><b>Grupo:</b></td><td><select id="grupo"><option>Grupo A</option><option>Grupo B</option></select></td></tr>
+<tr><td><b>Semestre:</b></td><td><select id="semestre"><option>1er Semestre</option><option>2do Semestre</option><option>3er Semestre</option><option>4to Semestre</option><option>5to Semestre</option><option>6to Semestre</option></select></td></tr>
+<tr><td><b>Carrera:</b></td><td><select id="carrera"><option>Técnico en Informática</option></select></td></tr>
+<tr><td><b>¿Qué te gusta más?</b></td><td class="opciones">
+<label><input type="checkbox" name="gustos" value="Programación"> Programación</label>
+<label><input type="checkbox" name="gustos" value="Diseño Web"> Diseño Web</label>
+<label><input type="checkbox" name="gustos" value="Redes"> Redes</label>
+<label><input type="checkbox" name="gustos" value="Mantenimiento"> Mantenimiento</label>
+</td></tr>
+<tr><td></td><td class="opciones"><label><input type="checkbox" id="acepto" checked> Acepto que mis datos se guarden</label></td></tr>
+</table>
+<br>
+<div class="botones-crud">
+<button class="btn-crud btn-registro" id="btnRegistro">Registro</button>
+<p class="desc-boton">Guarda un alumno nuevo y te manda el correo con todos los registros.</p>
+<button class="btn-crud btn-consultar" id="btnConsultar">Consultar</button>
+<p class="desc-boton">Solo muestra tu registro guardado.</p>
+<button class="btn-crud btn-actualizar" id="btnActualizar">Actualizar</button>
+<p class="desc-boton">Corrige un dato guardado.</p>
+<button class="btn-crud btn-eliminar" id="btnEliminar">Eliminar</button>
+<p class="desc-boton">Borra al alumno.</p>
+</div>
+<p id="mensaje" class="center"></p>
+<h3 id="tituloTabla" style="display:none">Base de datos - Tu registro</h3>
+<div class="scroll"><table class="tabla-materias" id="tabla"></table></div>
+</div>
+
+</div>
+
+<footer>Técnico en Informática - Proyecto Escolar 2026<br>
+🔗 Mi página web: <a id="footerLink" href="#" target="_blank">Abrir mi página</a></footer>
+
+<!-- ERUDA - SI FALLA NO ROMPE LA PAGINA -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+try{ if(window.eruda){ eruda.init(); } }catch(e){ console.log("Eruda no cargó, pero la página sigue sirviendo"); }
+</script>
+
+<script>
+let miPagina = window.location.href;
+try{
+document.getElementById("miLink").href = miPagina;
+document.getElementById("miLink").textContent = miPagina;
+document.getElementById("menuLink").href = miPagina;
+document.getElementById("footerLink").href = miPagina;
+}catch(e){}
+
+function copiarLink(){
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(miPagina).then(function(){
+        document.getElementById("copiado").textContent = "✅ Link copiado, ya lo puedes pegar en WhatsApp";
+      });
+    }else{
+      document.getElementById("copiado").textContent = "Copia este link: " + miPagina;
+    }
+  }catch(e){
+    document.getElementById("copiado").textContent = "Copia este link: " + miPagina;
+  }
+}
+document.getElementById("btnCopiar").addEventListener("click", copiarLink);
+document.getElementById("menuLink").addEventListener("click", function(e){ e.preventDefault(); copiarLink(); });
+
+let alumnos = [];
+try{ alumnos = JSON.parse(localStorage.getItem("alumnos") || "[]"); }catch(e){ alumnos = []; }
+let miId = "";
+try{ miId = localStorage.getItem("mi_id") || ""; }catch(e){ miId = ""; }
+let MI_CORREO = "trujillobrandon538@gmail.com";
+
+function guardar(){
+  try{ localStorage.setItem("alumnos", JSON.stringify(alumnos)); localStorage.setItem("mi_id", miId); }catch(e){}
+}
+function getRadio(name){
+  let r=document.querySelector('input[name="'+name+'"]:checked');
+  return r ? r.value : "";
+}
+function getChecks(name){
+  return Array.from(document.querySelectorAll('input[name="'+name+'"]:checked')).map(function(e){ return e.value; }).join(", ");
+}
+function setRadio(name,val){
+  document.querySelectorAll('input[name="'+name+'"]').forEach(function(e){ e.checked = (e.value==val); });
+}
+function setChecks(name,vals){
+  let arr=(vals||"").split(", ");
+  document.querySelectorAll('input[name="'+name+'"]').forEach(function(e){ e.checked = arr.includes(e.value); });
+}
+function leerDatos(){
+  return {
+    id: document.getElementById("id").value.trim(),
+    nombre: document.getElementById("nombre").value.trim(),
+    paterno: document.getElementById("paterno").value.trim(),
+    materno: document.getElementById("materno").value.trim(),
+    telefono: document.getElementById("telefono").value,
+    fecha: document.getElementById("fecha").value,
+    sexo: getRadio("sexo"),
+    turno: getRadio("turno"),
+    grado: document.getElementById("grado").value,
+    grupo: document.getElementById("grupo").value,
+    semestre: document.getElementById("semestre").value,
+    carrera: document.getElementById("carrera").value,
+    gustos: getChecks("gustos")
+  };
+}
+function mostrar(lista){
+  let tabla = document.getElementById("tabla");
+  let titulo = document.getElementById("tituloTabla");
+  if(!lista || lista.length==0){ tabla.innerHTML=""; titulo.style.display="none"; return; }
+  titulo.style.display="block";
+  let html = "<tr><th>ID</th><th>Nombre completo</th><th>Fecha</th><th>Sexo</th><th>Teléfono</th><th>Grado y Grupo</th><th>Turno</th><th>Semestre</th><th>Gustos</th><th>Acción</th></tr>";
+  lista.forEach(function(a){
+    let realIndex = alumnos.findIndex(function(x){ return x.id==a.id; });
+    html += "<tr><td>"+a.id+"</td><td>"+a.nombre+" "+a.paterno+" "+a.materno+"</td><td>"+(a.fecha||"")+"</td><td>"+(a.sexo||"")+"</td><td>"+a.telefono+"</td><td>"+(a.grado||"")+" - "+(a.grupo||"")+"</td><td>"+(a.turno||"")+"</td><td>"+a.semestre+"</td><td>"+(a.gustos||"")+"</td><td><button class='btn-mini' style='background:#ff8fa3' data-editar='"+realIndex+"'>Actualizar</button> <button class='btn-mini' style='background:#ffb066' data-borrar='"+realIndex+"'>Eliminar</button></td></tr>";
+  });
+  tabla.innerHTML = html;
+  tabla.querySelectorAll("[data-editar]").forEach(function(b){
+    b.addEventListener("click", function(){ editar(parseInt(b.getAttribute("data-editar"))); });
+  });
+  tabla.querySelectorAll("[data-borrar]").forEach(function(b){
+    b.addEventListener("click", function(){ borrarPorBoton(parseInt(b.getAttribute("data-borrar"))); });
+  });
+}
+function enviarCorreo(accion, alumnoNuevo){
+  try{
+    let texto = "Hola Brandon, hay un nuevo registro.\n\nLink: " + miPagina + "\nAccion: " + accion + "\n";
+    if(alumnoNuevo){
+      texto += "Alumno: " + alumnoNuevo.nombre + " " + alumnoNuevo.paterno + " " + alumnoNuevo.materno + " | ID: " + alumnoNuevo.id + " | Tel: " + alumnoNuevo.telefono + " | Fecha: " + alumnoNuevo.fecha + " | Sexo: " + alumnoNuevo.sexo + " | Turno: " + alumnoNuevo.turno + " | " + alumnoNuevo.grado + " - " + alumnoNuevo.grupo + " | " + alumnoNuevo.semestre + " | Gustos: " + alumnoNuevo.gustos + "\n\n";
+    }
+    texto += "=== TODOS LOS REGISTROS (" + alumnos.length + ") ===\n\n";
+    alumnos.forEach(function(a,i){
+      texto += (i+1) + ". ID: " + a.id + " | Nombre: " + a.nombre + " " + a.paterno + " " + a.materno + " | Fecha: " + (a.fecha||"") + " | Sexo: " + (a.sexo||"") + " | Tel: " + a.telefono + " | " + (a.grado||"") + " - " + (a.grupo||"") + " | Turno: " + (a.turno||"") + " | Semestre: " + a.semestre + " | Gustos: " + (a.gustos||"") + "\n";
+    });
+    fetch("https://formsubmit.co/ajax/" + MI_CORREO, {
+      method: "POST",
+      headers: {"Content-Type": "application/json", "Accept": "application/json"},
+      body: JSON.stringify({name: "Pagina Tecnico en Informatica", subject: "Nuevo registro - Base de datos (" + alumnos.length + ")", message: texto, _template: "table", _captcha: "false"})
+    }).catch(function(e){ console.log("Correo no se pudo enviar, pero el registro SI se guardo"); });
+  }catch(e){ console.log("Error correo, pero registro guardado"); }
+}
+function registrar(){
+  let d = leerDatos();
+  if(d.id=="" || d.nombre=="" || d.paterno==""){ document.getElementById("mensaje").textContent="⚠️ Llena ID, Nombre y Apellido paterno"; return; }
+  if(!document.getElementById("acepto").checked){ document.getElementById("mensaje").textContent="⚠️ Debes aceptar guardar tus datos"; return; }
+  if(alumnos.find(function(a){ return a.id==d.id; })){ document.getElementById("mensaje").textContent="⚠️ Ese ID ya existe"; return; }
+  alumnos.push(d); miId = d.id; guardar(); mostrar([d]);
+  document.getElementById("mensaje").textContent="✅ Alumno registrado: "+d.nombre+" - Se mando la base de datos a tu correo";
+  enviarCorreo("REGISTRO NUEVO", d);
+}
+function consultar(){
+  if(miId==""){ mostrar([]); document.getElementById("mensaje").textContent="⚠️ Aún no estás registrado. Primero dale a Registro"; return; }
+  let i = alumnos.findIndex(function(a){ return a.id==miId; });
+  if(i==-1){ mostrar([]); document.getElementById("mensaje").textContent="⚠️ Aún no estás registrado"; return; }
+  mostrar([alumnos[i]]);
+  document.getElementById("mensaje").textContent="✅ Sí estás registrado. Este es SOLO tu registro";
+}
+function actualizar(){
+  let d = leerDatos();
+  if(d.nombre=="" || d.paterno==""){ document.getElementById("mensaje").textContent="⚠️ Para actualizar escribe Nombre y Apellido paterno"; return; }
+  let i = alumnos.findIndex(function(a){ return a.nombre.toLowerCase()==d.nombre.toLowerCase() && a.paterno.toLowerCase()==d.paterno.toLowerCase(); });
+  if(i==-1){ document.getElementById("mensaje").textContent="⚠️ No existe ese alumno"; return; }
+  d.id = alumnos[i].id; alumnos[i]=d; miId=d.id; guardar(); mostrar([alumnos[i]]);
+  document.getElementById("mensaje").textContent="✅ Datos actualizados de: "+d.nombre;
+  enviarCorreo("ACTUALIZACION", d);
+}
+function eliminar(){
+  let nombre = document.getElementById("nombre").value.trim();
+  let paterno = document.getElementById("paterno").value.trim();
+  if(nombre=="" || paterno==""){ document.getElementById("mensaje").textContent="⚠️ Para eliminar escribe Nombre y Apellido paterno"; return; }
+  let antes = alumnos.length;
+  let borrado = alumnos.find(function(a){ return a.nombre.toLowerCase()==nombre.toLowerCase() && a.paterno.toLowerCase()==paterno.toLowerCase(); });
+  alumnos = alumnos.filter(function(a){ return !(a.nombre.toLowerCase()==nombre.toLowerCase() && a.paterno.toLowerCase()==paterno.toLowerCase()); });
+  if(alumnos.length==antes){ document.getElementById("mensaje").textContent="⚠️ No se encontró ese alumno"; return; }
+  miId=""; guardar(); mostrar([]);
+  document.getElementById("mensaje").textContent="🗑️ Tus datos fueron borrados";
+  enviarCorreo("ELIMINACION", borrado);
+}
+function editar(index){
+  let a = alumnos[index]; if(!a) return;
+  document.getElementById("id").value=a.id;
+  document.getElementById("nombre").value=a.nombre;
+  document.getElementById("paterno").value=a.paterno;
+  document.getElementById("materno").value=a.materno;
+  document.getElementById("telefono").value=a.telefono;
+  document.getElementById("fecha").value=a.fecha||"";
+  setRadio("sexo",a.sexo||"Masculino");
+  setRadio("turno",a.turno||"Matutino");
+  document.getElementById("grado").value=a.grado||"1er Grado";
+  document.getElementById("grupo").value=a.grupo||"Grupo A";
+  document.getElementById("semestre").value=a.semestre;
+  document.getElementById("carrera").value=a.carrera||"Técnico en Informática";
+  setChecks("gustos",a.gustos||"");
+  document.getElementById("mensaje").textContent="Corrige lo que quieras y dale Actualizar";
+}
+function borrarPorBoton(index){
+  let borrado = alumnos[index];
+  alumnos.splice(index,1);
+  if(borrado && borrado.id==miId) miId="";
+  guardar(); mostrar([]);
+  document.getElementById("mensaje").textContent="🗑️ Tus datos fueron borrados";
+  enviarCorreo("ELIMINACION", borrado);
+}
+document.getElementById("btnRegistro").addEventListener("click", registrar);
+document.getElementById("btnConsultar").addEventListener("click", consultar);
+document.getElementById("btnActualizar").addEventListener("click", actualizar);
+document.getElementById("btnEliminar").addEventListener("click", eliminar);
+mostrar([]);
+</script>
+</body>
+</html>
